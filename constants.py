@@ -7,4 +7,3 @@ COORDINATES = {'Odessa': (46.482525, 30.723309),
                }
 EXCLUDED = "minutely,hourly,current"
 UNITS = "metric"
-QUERY = "SELECT sum(:val) / 8 as 'average_stat' FROM forecast INNER JOIN city ON forecast.city_id = city.id WHERE city.name = :city"
